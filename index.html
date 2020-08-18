@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel = "stylesheet" href = "style.css" />
-    </head>
-    <body>
-        <div id="loader"><img src="loader.gif"></div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111945.42562078293!2d77.02272188433994!3d28.74062140062102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d013a47a1803d%3A0xedfb8cc477815e2f!2sRohini%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1597731129607!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        
-    </body>
-      <script type="text/javascript">
-        var loader = document.getElementById("loader");
-        window.addListener("load",function(){
-          loader.style.height= "100px";
-          loader.style.width= "100px";
-          loader.style.bordeRadius= "50%";
-          loader.style.visibility= "hidden";
-        });
-      </script>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="myFunction()" style="margin:0; background-color: #0d0121;">
+
+<div id="loader" align="center" style="background: #0d0121;"><img src="loader.gif"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  <h2>Tada!</h2>
+  <p>Some text in my newly loaded page..</p>
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</body>
 </html>
