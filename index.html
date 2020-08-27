@@ -21,6 +21,15 @@
       </div>
     </div>
 </div>
+<div style="background-color:#d562ff"><br>
+    <div style="font-family: 'Black Han Sans';font-size: 50px;" align="center">
+        Skills
+    </div>
+    <div style="font-family: 'Do Hyeon'; font-size: 30px; color: #585858">
+      I am a Programmer, Web Designer, Rookie Game Designer and a Gamer Myself</div>
+      <div style="font-family: 'Do Hyeon'; font-size: 20px; color: #585858">The languages and softwares I am fluent with are:-<br>
+      Html, Css, Some Python and Java, Mit App Inventor, Thunkable, Kodular, Scratch, Microsoft Kodu, Firebase Console (I guess there is no need to add Microsoft Office but if you count that as a skill then i know it😁)</div>
+</div> 
 <div style="background-color:#ff0751"><br>
     <div style="font-family: 'Black Han Sans';font-size: 50px;" align="center">
         Achievements
@@ -35,7 +44,7 @@
               <div class="column">
               <img src="Pcodeq.png" style="width:100%" alt="Project CodeQ">
                 <div class="overlay">
-                  <div class="text">Hello World</div>
+                  <div class="text">Project CodeQ- A Web Design Company Example</div>
                 </div>
               </div>
             </div>
@@ -44,16 +53,16 @@
             <div class="column">
               <img src="Pdb.png" style="width:100%" alt="Project DealByte">
                 <div class="overlay">
-                  <div class="text">Hello World</div>
+                  <div class="text">Project DealByte- A E-commerce Website Example</div>
                 </div>
               </div>
             </div>
-            
+
             <div class="container">
             <div class="column">
               <img src="Pcf.png" style="width:100%;" alt="Project ConForm">
                 <div class="overlay">
-                  <div class="text">Hello World</div>
+                  <div class="text">Project ConForm- A Form with Firebase Backend Example</div>
                 </div>
               </div>
             </div>
@@ -63,34 +72,5 @@
 <script>
   if (screen.width <= 800) {
   window.location = "https://yuvaan16.github.io/ProjectFolio/mindex.html";
-}
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
 </script>
 </html>
