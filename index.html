@@ -5,9 +5,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<script>
-  if (screen.width <= 800) {
-  window.location = "https://yuvaan16.github.io/ProjectFolio/mindex.html";
+<script type="text/javascript">
+if (screen.width <= 699) {
+document.location = "mobile.html";
+}
+</script>
+<script language=javascript>
+if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+   location.replace("http://url-to-send-them/iphone.html");
+}
 </script>
 <body align="center">
     <div style="background-color:#83ffbe" style="width: 100%"><br>
@@ -43,9 +49,7 @@
     <div style="font-family: 'Black Han Sans';font-size: 50px;" align="center">
         My Projects
         <div>
-          <div class="row">
             <div class="container">
-              <div class="column">
               <img src="Pcodeq.png" style="width:100%" alt="Project CodeQ">
                 <div class="overlay">
                   <div class="text">Project CodeQ- A Web Design Company Example</div>
